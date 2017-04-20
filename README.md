@@ -25,7 +25,7 @@ To be able to do the exercises in this tutorial, you need to have the following 
 
 It is expected that you know how to edit PHP files.
 
-If you have questions related to any of the installation instructions below, please email me at beau@dflydev.com, or find me (simensen) on IRC's Freenode network.
+If you have questions related to any of the installation instructions below, please email me at beau@dflydev.com, or find me (simensen) on IRC's Freenode network channel #dflydev.
 
 ### Composer
 
