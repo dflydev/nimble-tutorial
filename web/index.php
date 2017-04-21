@@ -11,9 +11,7 @@ use Interop\Http\Factory\ResponseFactoryInterface;
 use LoneStar\TutorialApp;
 use Nimble\Action\ActionHandler;
 use Nimble\Middleware\Routing\NikicFastRoute\NikicFastRoute;
-use Nimble\Middleware\StringTransformation;
 use Nimble\WebApp;
-use Psr\Http\Message\ServerRequestInterface;
 use function Http\Response\send;
 
 $container = new Container();
@@ -32,7 +30,6 @@ $request = $requestServerFactory->createServerRequestFromArray($_SERVER);
 
 $response = \Middlewares\Utils\Dispatcher::run([
     $container->make(NikicFastRoute::class),
-    //$container->make(StringTransformation::class),
     $container->make(ActionHandler::class)
 ], $request);
 
